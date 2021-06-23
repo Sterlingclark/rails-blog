@@ -34,6 +34,12 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def destory
+    @article = Article.find(params[:id])
+    @article.destory
+    redirect_to root_path
+  end
+
   private
   def article_params
     params.require(:article).permit(:title, :body)
