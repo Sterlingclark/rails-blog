@@ -1,3 +1,25 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+$front-stack: Helvetica, sans-serif;
+$primary-color: rgb(3, 32, 51);
+
+body{
+  font: 100% $front-stack;
+  color: $primary-color;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: underline;
+  }
+}
+
